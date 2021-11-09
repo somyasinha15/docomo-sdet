@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Refund process in Payment Gateway" allow-return-values="true" parallel="false" thread-count="2">
+    <listeners>
+        <listener class-name="com.reporting.Listeners.TestListener"/>
+        <listener class-name="com.reporting.Listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <parameter name="grid" value="BROWSERSTACK"/> <!-- LOCAL or DOCKER or CLOUD or BROWSERSTACK-->
+    <parameter name="perf" value="NO"/>
+
+    <test name="E2E Tests for api">
+        <classes>
+            <class name="com.TestDefinitionLayer.TC001_ApiTest"/>
+        </classes>
+    </test>
+
+</suite>

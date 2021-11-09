@@ -1,0 +1,13 @@
+.allure/**/**
+.idea/**/**
+.gradle/**/**
+.settings/**
+.project
+.classpath
+bin/**/**
+Out
+Reports
+allure-results/**/**
+ScreensDoc/**/**
+logs/logfile.log
+/build/
